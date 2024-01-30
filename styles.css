@@ -59,7 +59,7 @@ h3 {
 }
 
 h2 {
-    font-size: 3calc(1.375rem + 1.5vw);
+    font-size: calc(0.9rem + 1.5vw);
 }
 
 p {
@@ -77,12 +77,26 @@ div {
     border-radius: 30px;
 }
 
+.who, .goal {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.who > img, .goal > img {
+    margin-top: 30px;
+}
+
 .pilot {
     background-color: #034FB6;
 }
 
 .pilot > h2, .pilot > ul > li {
     color: #fff;
+}
+
+.pilot > h2 {
+    margin-left: 1.2rem;
 }
 
 .socials {
@@ -115,11 +129,21 @@ footer > p {
     color: #fff;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .socials {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
         padding: 0;
+    }
+
+    .who, .goal {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .who > img, .goal > img {
+        margin-top: 0px;
+        justify-self: center;
     }
 }
