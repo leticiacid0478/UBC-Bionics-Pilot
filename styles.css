@@ -104,7 +104,10 @@ div {
 
 footer {
     background-color: var(--bs-blue);
-    text-align: center;
+    align-items: center;
+    height: 2rem;
+    justify-content: center;
+    display: flex;
     height: 2rem
 }
 
